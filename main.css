@@ -4,13 +4,13 @@
 .navbar {
     background-color: #e15f41;
 }
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
  background-color: #fff;
  color: #e15f41;
 }
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .nav-brand,
-.nav-brand:hover {
+.nav-brand:hover, .nav-link:hover {
     color: #fff;
 }
 
@@ -37,3 +37,27 @@
 #sobre-o-restaurante {
     background-color: #ffeae6;
 }
+
+.text-colored {
+    color: #e15f41;
+}
+
+/* Aqui deixamos os titulos do Menu e Cardápio escondidos*/
+.titulos-escondidos {
+    display: none;
+}
+
+#caixa-de-menu {
+    margin-top: 16px;
+}
+
+.nav-cardapio .nav-link.active {
+    background-color: #e15f41;
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+    background-color: #e15f41;
+}
+
+
