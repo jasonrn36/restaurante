@@ -52,7 +52,8 @@
     margin-top: 16px;
 }
 
-.nav-cardapio .nav-link.active {
+.nav-cardapio .nav-link.active,
+#fale-conosco-button {
     background-color: #e15f41;
     color: #fff;
 }
@@ -61,6 +62,12 @@
     background-color: #e15f41;
 }
 
-.social-links{
-
+.social-links li {
+    list-style: none;
+    display: inline;
 }
+
+.social-links a {
+    text-decoration: none;
+}
+
