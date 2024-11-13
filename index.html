@@ -16,6 +16,8 @@
     <!--Fonte Pacifico-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+
+
     <title>La Carne</title>
 </head>
     <body>
@@ -29,7 +31,7 @@
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="#sobre-o-restaurante" class="nav-link">
                             <i class="bi bi-house-door me-1"></i>
                             Sobre o La Carne
@@ -58,10 +60,10 @@
         </div>
     </header>
 <!--Aqui temos um spy das sections-->
-<div data-bs-spy="scroll" data-bs-target="cabecalho">
+<div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smoth="scroll">
 <!--Aqui temos o slide da seção sobre o restaurante-->
-    <section id="sobre-o-restaurante" >
-        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+    <section >
+        <div class="carousel slide " data-bs-ride="carousel" id="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" class="objectImage" data-bs-interval="5000">
                     <img src="./images/slides/slide1.png"  alt="Espaço interno do restaurante">
@@ -87,13 +89,13 @@
         </div>
 
 <!--Aqui temos o artigo da seção sobre o restaurante-->
-        <div class="pt-5 pb-5">
+        <div id="sobre-o-restaurante" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
                         <img src="./images/restaurante.jpg" class="d-block w-100 rounded" alt="Foto espaço amblo interno do restaurante">
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 mt-0">
                         <h2 class="section-title">Sobre <span class="section-title-span">o Restaurante</span></h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae atque nesciunt aliquid nam, nulla, ratione nostrum fugit laudantium est laborum. Pariatur veritatis a fugit quasi numquam distinctio corrupti repudiandae.</p>
                         <h3 class="section-title">Sobre <span class="section-title-span">o espaço</span></h3>
@@ -366,14 +368,14 @@
                             <input type="email" id="nome" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="telefone" class="form-label fw-bold text-colored">telefone</label>
-                            <input type="tel" id="telefone" class="form-control" required>
+                            <label for="campo-telefone" class="form-label fw-bold text-colored">telefone</label>
+                            <input type="tel" id="campo-telefone" class="form-control" required>
                         </div>
                         <div class="mb-3">
                             <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
                             <textarea class="form-control" id="mensagem"></textarea>
                         </div>
-                            <button type="submit" class="btn fw-bold" id="fale-conosco-button">Enviar</button>
+                            <button type="submit" class="btn fw-bold mb-5" id="fale-conosco-button">Enviar</button>
 
                     </form>
                 </div>
@@ -420,6 +422,20 @@
 
 
 </div>
-    <script src="./lib/bootstrap.bundle.min.js"></script>
+
+
+    <script type="text/javascript" src="./lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.mask.js"></script>
+
+    <!--Aqui está a area de srcipt em java-->
+   <script>
+        $(document).ready(fuction() ,{
+
+                $('#telefone').mask('(00)0 0000-0000');
+            
+        })
+
+   </script>
     </body>
 </html>
